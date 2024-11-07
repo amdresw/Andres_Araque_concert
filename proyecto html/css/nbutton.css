@@ -1,0 +1,83 @@
+  .dropdown-area {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .notify-button {
+    background-color: #ffffff;
+    
+    width: 3.5rem;
+    height: 3.5rem;
+    
+    border-radius: 3.5rem;
+    
+    display: flex;
+    
+    align-items: flex-end;
+    justify-content: center;
+    
+    align-self: flex-end;
+    
+    cursor: pointer;
+    
+    transition: all 0.2s ease;
+    
+    box-shadow:
+    0 1.1px 2.2px rgba(0, 0, 0, 0.014),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.02),
+    0 5px 10px rgba(0, 0, 0, 0.025),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.03),
+    0 16.7px 33.4px rgba(0, 0, 0, 0.036),
+    0 40px 80px rgba(0, 0, 0, 0.05);
+  }
+  
+  .active {
+    background-color: #6a1b9a;
+  }
+  
+  .active svg {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+  
+  .notify-area {
+    background-color: #ffffff;
+    
+    border-radius: 0.3rem;
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 0.5rem;
+    
+    box-shadow:
+    0 1.1px 2.2px rgba(0, 0, 0, 0.014),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.02),
+    0 5px 10px rgba(0, 0, 0, 0.025),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.03),
+    0 16.7px 33.4px rgba(0, 0, 0, 0.036),
+    0 40px 80px rgba(0, 0, 0, 0.05);
+    
+    visibility: hidden;
+    
+    transition: visibility 0.2s ease-in;
+  }
+  
+  .notify-area li {
+    list-style: none;
+    padding: 1rem 2rem;
+    
+    transition: background-color 0.1s ease;
+  }
+  
+  .notify-area li:first-child {
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  
+  .notify-area li:last-child {
+    border-radius: 0 0 0.3rem 0.3rem;
+  }
+  
+  .notify-area li:hover {
+    background-color: #eaeaea;
+  }
