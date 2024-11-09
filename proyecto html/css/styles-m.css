@@ -11,12 +11,23 @@ body{
     margin: auto;
     padding: 16px;
     font-family: "Inter", sans-serif;
+    background-color: #ffff;
 }
 .header{
     display: flex;
     gap: 8px;
+    text-align: justify;
     
     
+}
+.main-title{
+    height: 72px;
+    width: 265px;
+    left: 10px;
+    text-align: left;
+    margin-top: 0;
+    position: relative;
+    top: -155px;
 }
 h1, h2, h3 {
     font-family: 'Inter', sans-serif;
@@ -35,3 +46,43 @@ h1, h2, h3 {
     display: flex;
     align-items: flex-start;
 }
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+    top: -135px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 8px;
+}
+
+.search-bar i {
+    font-size: 20px;
+    color: #888;
+}
+.carousel {
+    display: flex;
+    position: relative;
+    top: -135px;
+    flex-direction: row;
+    height: 200px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel .carousel-item {
+    flex: 1;
+    min-width: 30%;
+    background-color: whitesmoke;
+    margin: 0 5px;
+  }
+ 
