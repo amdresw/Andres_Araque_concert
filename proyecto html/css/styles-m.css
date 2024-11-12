@@ -11,7 +11,7 @@ body{
     margin: auto;
     padding: 16px;
     font-family: "Inter", sans-serif;
-    background-color: #ffff;
+    background-color: #EDE9FF;
 }
 .header{
     display: flex;
@@ -69,6 +69,27 @@ h1, h2, h3 {
     font-size: 20px;
     color: #888;
 }
+
+.menu-container {
+    display: flex;
+    position: relative;
+    justify-content: space-around; /* Espacio uniforme entre botones */
+    padding: 10px;
+    gap: 10px; /* Espacio entre botones */
+    flex-direction: row ;
+}
+
+/* Opcional: Estilo para los botones */
+.category-btn {
+    flex: 1; /* Hace que todos los botones tengan el mismo ancho */
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
 .carousel {
     display: flex;
     position: relative;
@@ -85,4 +106,4 @@ h1, h2, h3 {
     background-color: whitesmoke;
     margin: 0 5px;
   }
- 
+
