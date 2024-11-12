@@ -6,7 +6,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+header{
+position: absolute;
+z-index: 100;
+padding: 10px;
+}
+.back{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
+    color:gray;
+    cursor: pointer;
+ }
 body{
     width: 100%;
     max-width: 400px;
@@ -152,4 +167,5 @@ p{
     padding: 10px;
     font-weight: 600;
     font-size: larger;
+    text-decoration: none;
 }
