@@ -27,7 +27,7 @@ body{
     position: relative;
     top: -155px;
 }
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 600; /* Semibold */
     text-align: left;
@@ -83,15 +83,37 @@ h1, h2, h3 {
     flex-direction: row ;
 }
 
-/* Opcional: Estilo para los botones */
+
 .category-btn {
-    flex: 2; /* Hace que todos los botones tengan el mismo ancho */
+    flex: 1; /* Hace que todos los botones tengan el mismo ancho */
     text-align: center;
     padding: 10px 0;
     border: none;
     cursor: pointer;
     color: white;
     border-radius: 5px;
+}
+
+.mini-tittle{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: relative;
+    top: -135px;
+    padding: 10px;
+}
+
+h3{
+    font-weight: 600; /* Semibold */
+    margin: 0;
+    font-size: medium;
+}
+
+.seeall{
+    font-size: small;
+    text-decoration: none;
+    cursor: pointer; 
+    font-weight: 400;
 }
 
 .carousel {
@@ -106,19 +128,75 @@ h1, h2, h3 {
 
 .carousel-item {
     flex: 1;
-    min-width: 100%;
-    max-width: 200px; /* Ajusta según tus necesidades */
-    height: 200px; /* Asegura que todos los items tengan la misma altura */
+    min-width: 95%;
+    max-width: 200px; 
+    height: 200px; 
     background-color: whitesmoke;
     margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
     overflow: hidden; 
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
 }
 
 .carousel-item img {
-    width: 100%; /* Ocupa el 100% del contenedor */
-    height: 100%; /* Ocupa el 100% de la altura del contenedor */
+    width: 100%; 
+    height: 100%; 
     object-fit: cover; 
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+    max-height: 100px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15); /* Fondo blanco semitransparente */
+    color: white;
+    border-radius: 8px;
+    backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
+    margin-top: 0;
+}
+
+p{
+    font-size: small;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left{
+    display: flex;
+    position: relative;
+    top: -135px;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+}
+.left img{
+    border-radius: 8px;
+    width: 90%; 
+    height: 140px; 
+    object-fit: cover; 
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
