@@ -65,6 +65,7 @@
   visibility: hidden;
   
   transition: visibility 0.2s ease-in;
+  z-index: 100;
 }
 
 .notify-area li {

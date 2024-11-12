@@ -16,9 +16,7 @@ body{
 .header{
     display: flex;
     gap: 8px;
-    text-align: justify;
-    
-    
+    text-align: justify;   
 }
 .main-title{
     height: 72px;
@@ -70,9 +68,15 @@ h1, h2, h3 {
     color: #888;
 }
 
+.medio{
+    display: flex;
+    flex-direction: column;
+}
+
 .menu-container {
     display: flex;
     position: relative;
+    top: -135px;
     justify-content: space-around; /* Espacio uniforme entre botones */
     padding: 10px;
     gap: 10px; /* Espacio entre botones */
@@ -81,7 +85,7 @@ h1, h2, h3 {
 
 /* Opcional: Estilo para los botones */
 .category-btn {
-    flex: 1; /* Hace que todos los botones tengan el mismo ancho */
+    flex: 2; /* Hace que todos los botones tengan el mismo ancho */
     text-align: center;
     padding: 10px 0;
     border: none;
@@ -98,12 +102,23 @@ h1, h2, h3 {
     height: 200px;
     overflow-x: scroll;
     scroll-behavior: smooth;
-  }
-  
-  .carousel .carousel-item {
+}
+
+.carousel-item {
     flex: 1;
-    min-width: 30%;
+    min-width: 100%;
+    max-width: 200px; /* Ajusta según tus necesidades */
+    height: 200px; /* Asegura que todos los items tengan la misma altura */
     background-color: whitesmoke;
     margin: 0 5px;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
 
+.carousel-item img {
+    width: 100%; /* Ocupa el 100% del contenedor */
+    height: 100%; /* Ocupa el 100% de la altura del contenedor */
+    object-fit: cover; 
+}
