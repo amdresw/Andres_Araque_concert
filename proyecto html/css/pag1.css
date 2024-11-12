@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    margin: auto;
+    font-family: "Inter", sans-serif;
+    background-color: #EDE9FF;
+}
+
+.main-img{
+    display: flex;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+    height: 400px;
+    overflow: hidden;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -60px;
+    bottom: 10px;
+    z-index: 100;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.photo-overlay {
+    display: flex;
+}
+
+.photo {
+    width: 40px; /* Ajusta el tamaño según necesites */
+    height: 40px;
+    border-radius: 50%;
+    border: 2px ; /* Opcional para un borde blanco */
+    margin-left: -10px; /* Superposición */
+    object-fit: cover; /* Ajusta la imagen dentro del círculo */
+}
+
+.photo:first-child {
+    margin-left: 0; /* El primer elemento no se solapa */
+}
+
+
+h1{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.highligt{
+    color: #761CBC;
+}
+p{
+    font-size: small;
+    font-weight: 400;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    text-align: left;
+    width: 90%;
+}
+.text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Número de líneas visibles inicialmente */
+    overflow: hidden;
+    color: #706D6D;
+}
+
+.text.expanded {
+    -webkit-line-clamp: unset; /* Muestra todo el texto */
+}
+
+.read-more-btn {
+    background-color: transparent;
+    
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    bottom: 15px;
+    text-align: left;
+    width: 90%;
+}
+.map img{
+    border-radius: 8px;
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    display: block;
+    z-index: 10;
+}
+
+.ticket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: -100px;
+    bottom: 10px;
+    z-index: 100;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 0%;
+}
+.cost{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.purple{
+    background-color: #761CBC;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: larger;
+}
