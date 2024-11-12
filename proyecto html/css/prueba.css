@@ -1,20 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Estilo base para el contenedor de botones */
-.menu-container {
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+    background: rgb(145,181,253);
+    background: linear-gradient(90deg, rgba(145,181,253,1) 35%, rgba(209,208,254,1) 60%, rgba(229,216,255,1) 100%);
+}
+
+header{
     display: flex;
-    justify-content: space-around; /* Espacio uniforme entre botones */
-    padding: 10px;
-    gap: 10px; /* Espacio entre botones */
-    flex-direction: row ;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+/* Ticket container */
+.ticket {
+    
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: #333;
+    
 }
 
-/* Opcional: Estilo para los botones */
-.category-btn {
-    flex: 1; /* Hace que todos los botones tengan el mismo ancho */
-    text-align: center;
-    padding: 10px 0;
-    border: none;
-    cursor: pointer;
-    color: white;
-    border-radius: 5px;
+/* Image container */
+.ticket-image img {
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px;
+    
 }
+
+/* Content container */
+.ticket-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.ticket-content h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.ticket-content p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 4px;
+}
+
+/* Ticket details grid */
+.ticket-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-top: 1px dashed #ccc; /* Línea punteada */
+    border-bottom: 1px dashed #ccc; /* Línea punteada */
+}
+
+.info {
+    text-align: left;
+    font-size: 12px;
+}
+
+/* Barcode section */
+.ticket-barcode {
+    text-align: center;
+    padding: 16px;
+}
+
+.ticket-barcode img {
+    width: 80%;
+    height: auto;
+}
+
+.ticket-barcode p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+}
+ .back{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
+    color:gray;
+    cursor: pointer;
+ }
+ .dots{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
+    color:gray;
+    cursor: pointer;
+ }
