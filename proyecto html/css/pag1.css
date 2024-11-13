@@ -21,6 +21,10 @@ padding: 10px;
     backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
     color:gray;
     cursor: pointer;
+    transition: background-color 0.3s;
+ }
+ .back:hover {
+    background: rgba(255, 255, 255, 0.5); /* Efecto hover más visible */
  }
 body{
     width: 100%;
@@ -102,15 +106,16 @@ p{
     -webkit-line-clamp: 3; /* Número de líneas visibles inicialmente */
     overflow: hidden;
     color: #706D6D;
+    transition: all 0.3s ease;
 }
 
 .text.expanded {
     -webkit-line-clamp: unset; /* Muestra todo el texto */
+    max-height: unset;
 }
 
 .read-more-btn {
     background-color: transparent;
-    
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -168,4 +173,67 @@ p{
     font-weight: 600;
     font-size: larger;
     text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (min-width: 1024px) and (min-height: 768px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+        position: relative; /* Añadido para que sea referencia de posicionamiento */
+    }
+
+    header {
+        position: absolute;
+        left: 10%; /* Ajusta este valor según necesites para alinear con el recuadro rojo */
+        top: 20px; /* Ajusta la distancia desde arriba según necesites */
+        padding: 0;
+    }
+
+    .back {
+        width: 50px; /* Hacemos el botón un poco más grande para desktop */
+        height: 50px;
+        background-color: #706D6D;
+        transition: background-color 0.3s; /* Añadimos una transición suave para hover */
+    }
+
+    .back:hover {
+        background: rgba(255, 255, 255, 0.5); /* Efecto hover más visible */
+    }
+
+
+    .main-img {
+        height: 500px; /* Ajusta la altura de la imagen */
+        width: 100%; /* Se asegura que la imagen ocupe todo el ancho */
+        z-index: 10;
+    }
+
+    .info, .description, .map, .ticket {
+        width: 80%; /* Ajusta el ancho de los contenedores en escritorios */
+    }
+
+    .ticket {
+        flex-direction: row; /* Asegura que los elementos dentro de .ticket estén en fila */
+        justify-content: space-between; /* Separación adecuada en escritorios */
+    }
+
+    .cost {
+        flex-direction: row; /* Mantener los costos en fila */
+    }
+
+    .text {
+        -webkit-line-clamp: 4; /* Muestra más líneas en escritorios */
+    }
+
+    .map img {
+        height: 400px; /* Aumenta la altura de la imagen del mapa */
+    }
+
+    .purple {
+        width: 200px; /* Aumentar el tamaño del botón purple */
+        height: 60px;
+        font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+    }
+    
 }

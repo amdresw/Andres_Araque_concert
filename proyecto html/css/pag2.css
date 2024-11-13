@@ -114,3 +114,82 @@ header{
     color:gray;
     cursor: pointer;
  }
+
+ @media (min-width: 1024px) and (min-height: 768px) {
+    body {
+        max-width: 1200px;
+        padding: 24px;
+        margin: auto;
+    }
+
+    /* Añadimos un contenedor que envuelva todo el contenido */
+    .ticket, header {
+        width: 80%;
+        margin: 0 auto; /* Centra los elementos */
+        padding: 20px;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    .back, .dots {
+        width: 50px;
+        height: 50px;
+        transition: background-color 0.3s;
+    }
+
+    .back:hover, .dots:hover {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+
+    .ticket-image img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .ticket-content {
+        padding: 24px;
+    }
+
+    .ticket-content h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .ticket-content p {
+        font-size: 16px;
+    }
+
+    .ticket-details {
+        padding: 24px;
+        margin: 20px 0;
+        gap: 100px;
+        justify-content: center;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .info p {
+        margin-bottom: 16px;
+    }
+
+    .ticket-barcode {
+        padding: 24px;
+    }
+
+    .ticket-barcode img {
+        width: 60%;
+        max-width: 400px;
+    }
+
+    .ticket-barcode p {
+        font-size: 14px;
+        margin-top: 16px;
+    }
+}

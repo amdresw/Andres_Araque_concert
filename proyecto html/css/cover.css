@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f3e7ff 0%, #e6f0ff 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.dots-pattern {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(circle, #8b8b8b 2px, transparent 2px);
+    background-size: 20px 20px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #9c27b0;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(156, 39, 176, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #9c27b0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.home-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(156, 39, 176, 0.3);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.instagram-icon {
+    width: 24px;
+    height: 24px;
+    color: #666; /* Color del ícono */
+    transition: color 0.3s ease;
+}
+
+.social:hover .instagram-icon {
+    color: #9c27b0; /* Color al hacer hover */
+}
+
+.instagram-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #9c27b0;
+}
+
+.right-content {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    object-fit: cover;
+}
+
+.phones-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-content {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .dots-pattern {
+        top: -50px;
+        left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+}
