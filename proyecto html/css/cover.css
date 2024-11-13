@@ -117,15 +117,21 @@ h2 {
 
 .phones-image {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 100px;
+    height: 100vh;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
 }
 
 @media (max-width: 768px) {
+
+    body {
+        width: 370px;
+        
+    }
+
     .container {
+        padding: 10px;
         flex-direction: column;
-        padding: 20px;
     }
 
     .left-content {
@@ -150,6 +156,15 @@ h2 {
     }
 
     .social {
+        justify-content: center;
+    }
+
+    .phones-image {
+        width: 60%; /* Reduce el ancho en móvil */
+        max-width: 150px; /* Asegura un tamaño máximo para la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    .right-content {
         justify-content: center;
     }
 }

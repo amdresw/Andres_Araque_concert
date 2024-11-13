@@ -15,7 +15,7 @@ padding: 10px;
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 800;
     margin: 0;
     background: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
     backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
@@ -179,8 +179,9 @@ p{
 
 @media (min-width: 1024px) and (min-height: 768px) {
     body {
-        max-width: 1200px;
+        max-width: 1000px;
         margin: auto;
+        background-color: whitesmoke;
         position: relative; /* Añadido para que sea referencia de posicionamiento */
     }
 
@@ -194,36 +195,52 @@ p{
     .back {
         width: 50px; /* Hacemos el botón un poco más grande para desktop */
         height: 50px;
+        margin-left: 20px;
         background-color: #706D6D;
         transition: background-color 0.3s; /* Añadimos una transición suave para hover */
     }
 
     .back:hover {
-        background: rgba(255, 255, 255, 0.5); /* Efecto hover más visible */
+        background: rgba(255, 255, 255, 0.3); /* Efecto hover más visible */
     }
 
 
     .main-img {
         height: 500px; /* Ajusta la altura de la imagen */
-        width: 100%; /* Se asegura que la imagen ocupe todo el ancho */
+        width: 800px; /* Se asegura que la imagen ocupe todo el ancho */
         z-index: 10;
+        content: url(/proyecto\ html/image/bannergrande.jpg);
+        margin:0 auto;
     }
 
-    .info, .description, .map, .ticket {
+    .description, .map {
         width: 80%; /* Ajusta el ancho de los contenedores en escritorios */
+        
+    }
+
+    .info{
+        width: 75%;
+    }
+    .ticket{
+        width: 80%;
+
     }
 
     .ticket {
+        display: flex;
         flex-direction: row; /* Asegura que los elementos dentro de .ticket estén en fila */
         justify-content: space-between; /* Separación adecuada en escritorios */
     }
 
     .cost {
-        flex-direction: row; /* Mantener los costos en fila */
+        display: flex;
+        flex-direction: column; /* Mantener los costos en fila */
+        
     }
 
     .text {
-        -webkit-line-clamp: 4; /* Muestra más líneas en escritorios */
+        -webkit-line-clamp: 3; /* Muestra más líneas en escritorios */
+        font-size: 20px;
     }
 
     .map img {
@@ -235,5 +252,10 @@ p{
         height: 60px;
         font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
     }
-    
+    p{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
