@@ -38,3 +38,4 @@ cd tu-repositorio
 3. Abre el archivo index.html en tu navegador o editor de código.
 
 Esto te permitirá ver la página en tu navegador localmente.   
+4. link: https://aaraque_concert.netlify.app/
