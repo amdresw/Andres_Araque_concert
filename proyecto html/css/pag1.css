@@ -181,9 +181,17 @@ p{
     body {
         max-width: 1000px;
         margin: auto;
-        background-color: whitesmoke;
+        background: rgb(145,181,253);
+        background: linear-gradient(90deg, rgba(145,181,253,1) 35%, rgba(209,208,254,1) 60%, rgba(229,216,255,1) 100%);
         position: relative; /* Añadido para que sea referencia de posicionamiento */
     }
+    main{
+        max-width: 900px;
+        margin: auto;
+        background-color: #EDE9FF;
+        position: relative; /* Añadido para que sea referencia de posicionamiento */
+    }
+    
 
     header {
         position: absolute;
@@ -195,7 +203,6 @@ p{
     .back {
         width: 50px; /* Hacemos el botón un poco más grande para desktop */
         height: 50px;
-        margin-left: 20px;
         background-color: #706D6D;
         transition: background-color 0.3s; /* Añadimos una transición suave para hover */
     }
@@ -207,7 +214,7 @@ p{
 
     .main-img {
         height: 500px; /* Ajusta la altura de la imagen */
-        width: 800px; /* Se asegura que la imagen ocupe todo el ancho */
+        width: 900px; /* Se asegura que la imagen ocupe todo el ancho */
         z-index: 10;
         content: url(/proyecto\ html/image/bannergrande.jpg);
         margin:0 auto;
@@ -221,15 +228,15 @@ p{
     .info{
         width: 75%;
     }
-    .ticket{
-        width: 80%;
-
-    }
 
     .ticket {
         display: flex;
+        width: 80%;
         flex-direction: row; /* Asegura que los elementos dentro de .ticket estén en fila */
         justify-content: space-between; /* Separación adecuada en escritorios */
+        margin-bottom: 0;
+        position: relative;
+        
     }
 
     .cost {

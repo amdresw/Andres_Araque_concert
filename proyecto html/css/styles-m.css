@@ -76,7 +76,8 @@ h1, h2 {
     width: 90%;
     max-height: 150px;
     overflow-y: auto;
-    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.3); /* Fondo blanco semitransparente */
+    backdrop-filter: blur(10px); /* Aplica el difuminado al fondo */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -258,6 +259,16 @@ a{
         max-width: 70%; /* Tamaño más ancho en escritorio */
         margin-top: 10px;
     }
+    .results {
+        display: none; /* Oculto por defecto */
+        position: absolute;
+        top: 310px;
+        width: 1100px;
+        max-height: 100px;
+        overflow-y: auto;
+        z-index: 1000;
+        padding: 8px 0;
+    }
 
     /* Carrusel */
     .carousel {
@@ -287,10 +298,9 @@ a{
     /* Ajuste del overlay */
     .text-overlay {
         position: absolute;
-        bottom: 140px;
         background: rgba(255, 255, 255, 0.2); /* Más transparente */
         font-size: 80px;
-        width: 790px;
+        width: 780px;
         min-height: 130px;
         border-radius: 12px;
         padding: 20px;
