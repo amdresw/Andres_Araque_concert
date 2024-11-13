@@ -33,7 +33,8 @@ Asegúrate de tener un editor de código como [VS Code](https://code.visualstudi
    git clone https://github.com/tu-usuario/tu-repositorio.git
 2. Accede a la carpeta del proyecto:
 
-cd tu-repositorio
+cd tu-repositorio  
+
 3. Abre el archivo index.html en tu navegador o editor de código.
 
 Esto te permitirá ver la página en tu navegador localmente.   
