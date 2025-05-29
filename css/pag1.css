@@ -216,7 +216,7 @@ p{
         height: 500px; /* Ajusta la altura de la imagen */
         width: 900px; /* Se asegura que la imagen ocupe todo el ancho */
         z-index: 10;
-        content: url(/proyecto\ html/image/bannergrande.jpg);
+        content: url(/image/bannergrande.jpg);
         margin:0 auto;
     }
 
